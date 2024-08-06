@@ -1,0 +1,47 @@
+<body
+  style="
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    user-select: none;
+  "
+>
+  <div
+    style="
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    "
+  >
+    <span
+      id="timer"
+      style="color: white; font-size: 20px; left: 100px; top: 100px"
+      >0시간 0분 0초째 보고 있다</span
+    >
+    <span style="color: white; font-size: 20px; cursor: pointer" id="sound"
+      >소리 켬</span
+    >
+  </div>
+
+  <video
+    src="/kiwi.mp4"
+    autoplay
+    loop
+    muted
+    style="width: 100%; height: 100%"
+  ></video>
+  <audio
+    src="/Funkytown.mp3"
+    autoplay
+    loop
+    controls
+    style="display: none"
+    src="/Funkytown.mp3"
+  ></audio>
+  <script src="/index.js"></script>
+</body>
